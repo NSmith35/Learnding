@@ -1,0 +1,40 @@
+// Fig. 2.1: fig02_01.c
+// A first program in C.
+
+// ^Look at me learnding how to make comments! And that blank space too. Just to make things easy to read. :)
+
+/* This
+will
+reportedly
+also
+make
+a
+comment? */
+
+#include <stdio.h>
+// This line will be processed by the preprocessor before compilation. Okay.
+// <stdio.h>: standard input/output header. In this case, allowing us to use the print fn below. I think.
+
+// function main begins program execution
+int main( void )
+
+/* EVERY FN SHOULD BE PRECEDED BY A COMMENT DESCRIBING THE PURPOSE OF THE FUNCTION!
+When written, paraentheses were boxed (likely because they will cause something to happen?)
+The parentheses tell us that main (before them) is a FUNCTION. One fn in every C program MUST be main.
+Fns can RETURN information. They can also RECEIVE information.
+"int" -> fn returns an INTEGER value! :) [used as a keyword here] - we'll be doing this for a while apparently...
+"void" -> 'main' does NOT receive any information... */
+
+//Left brace begins the BODY of the fn [if it doesn't work, it might be due to all of these comments...]
+{
+   printf( 'Welcome to C!\n );
+} // end function main
+
+/* More notes:
+- pair of braces and portion of program between them is called a BLOCK
+- indentation purely there for an easy read
+- printf: print on the screen (f for formatted) what is in the quotation marks, exactly as written
+- argument of printf fn between the parentheses and the ; [or STATEMENT TERMINATOR]
+- \ denotes an ESCAPE SEQUENCE: tells the fn to do something special.
+   - \n denotes a new line: cursor moves to next free line after run
+- always add a comment to the line containing the right brace, so you know the fn is ending */
